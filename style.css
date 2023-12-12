@@ -147,7 +147,6 @@ a:focus {
 .Glance {
     font-size: 16px !important;
     font-weight: bold !important;
-    border-style: solid;
     border-radius: 4px;
     margin-bottom: 3px !important;
     color: #1d589e !important;
@@ -169,7 +168,7 @@ a:focus {
 .glance-sub {
   font-size: 16px !important;
   font-weight: bold !important;
-  border-style: solid;
+  
   border-radius: 4px;
   margin-bottom: 3px !important;
   color: #1d589e !important;
