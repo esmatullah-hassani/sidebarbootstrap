@@ -1,7 +1,10 @@
 
 var dropdown = document.getElementsByClassName("dropdown-sidebar");
 var i;
-
+function clickD(){
+  alert("hi")
+  console.log(dropdown[0]);
+}
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
     this.classList.toggle("active");
