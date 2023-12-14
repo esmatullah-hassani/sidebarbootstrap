@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar</title>
-   <style>
    
-   </style>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
    <style>
         .close:hover{
@@ -18,20 +18,58 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #rightSideMenu {
+            width: 40px;
+            height: auto;
+            position: absolute;
+            top: 80px;
+            cursor: pointer;
+        }
+        #rightSideMenu > div {
+            cursor: pointer;
+            background: black;
+            height: 40px;
+            opacity: 0.6;
+            color: white !important;
+            margin-top: 5px;
+            display: flex;
+            width: 100%;
+            transition: all 200ms;
+            overflow: hidden;
+        }
+        #rightSideMenu .IconParentDiv {
+            display: flex;
+            align-items: center;
+            text-align:center;
+            max-width: 40px;
+            width: 40px;
+        }
+        .rightSideIconText {
+            width: 100%;
+            text-align: center;
+            margin: 11px auto;
+            color: white !important;
+        }
    </style>
 </head>
 <body>
     
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center py-2">
-                <a href="#loginModal" role="button" class="btn btn-primary btn-lg" data-toggle="modal">Login</a>
-            </div>
+    <div id="rightSideMenu" class="hidden-xs" style="text-align:center">
+    
+    <div>
+        <div class="IconParentDiv">
+            <a href="miu.edu.af" role="button" class="btn btn-lg" ><i class="fa fa-info"></i></a>
         </div>
     </div>
+    <div id="showLoginForm" style="display: flex;">
+        <div class="IconParentDiv">
+            <a href="#loginModal" role="button" class="btn btn-lg" data-toggle="modal"><i class="fa fa-sign-in"  ></i></a>
+        </div>
+    </div>
+    </div>
+  
     
-    <div id="loginModal" class="modal fade " tabindex="-1" role="dialog" aria-hidden="false">
+    <div id="loginModal" class="modal fade " tabindex="-1" role="dialog" aria-hidden="false" style="align-items: center;">
         <div class="modal-dialog modal-lg">
             <div class="pb-4" >
                 <button type="button"  class="close link" style="color: white;" data-dismiss="modal" aria-hidden="true">×</button>
