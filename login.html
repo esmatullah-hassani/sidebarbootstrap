@@ -67,56 +67,58 @@
     </div>
     <div id="showLoginForm" style="display: flex;">
         <div class="IconParentDiv">
-            <a href="#loginModal" role="button" class="btn btn-lg" data-toggle="modal" onclick="modelFadeIn()"><i class="fa fa-sign-in"  ></i></a>
+            <a href="#loginModal" title="نمایش ورود به سیستم" role="button" class="btn btn-lg" data-toggle="modal" onclick="modelFadeIn()"><i class="fa fa-sign-in"  ></i></a>
         </div>
     </div>
     </div>
   
     
-    <div id="loginModal" class="modal fade right" tabindex="-1" data-backdrop="static" role="dialog" aria-hidden="false" style="align-items: center;margin: auto;">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            
-            <div class="modal-content " >
-                <div class="pb-2" style="background-color: rgb(0, 0, 0);">
-                    <button type="button"  class="close link" style="color: white;" data-dismiss="modal" aria-hidden="true" onclick="modelFadeOut()">×</button>
-                </div>
-                <div class="modal-header " style="padding: 20px !important;box-shadow: 1px 4px 25px -5px grey;text-align: center;">
-                    
-                    <div class="col-md-6">
-                            <img src="img/logo.png" style="max-height: 60px;" alt="">
+    <div style="margin: auto;">
+        <div id="loginModal" class="modal fade right" tabindex="-1" data-backdrop="static" role="dialog" aria-hidden="false" style="align-items: center; margin: auto;">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                
+                <div class="modal-content " >
+                    <div class="pb-2" style="background-color: rgb(0, 0, 0);">
+                        <button type="button"  class="close link" style="color: white;" data-dismiss="modal" aria-hidden="true" onclick="modelFadeOut()">×</button>
                     </div>
-                    <div class="col-md-6">
-                        <h6>
-                            جامعه المصطفی(ص)- افغانستان
-                        </h6>
-                    </div>
-                </div>
-                <div class="modal-body" style="padding-top: 0px !important;padding-bottom: 0px !important;">
-                    <div class="row ">
-                        <div class="col-md-7" style="border-left: 1px solid ;"></div>
-                        <div class="col-md-5 pt-4 pb-2" style="float: right;direction: rtl; text-align: right;">
+                    <div class="modal-header " style="padding: 20px !important;box-shadow: 1px 4px 25px -5px grey;text-align: center;">
+                        
+                        <div class="col-md-6">
+                                <img src="img/logo.png" style="max-height: 60px;" alt="">
+                        </div>
+                        <div class="col-md-6">
                             <h6>
-                                ورود به سیستم
+                                جامعه المصطفی(ص)- افغانستان
                             </h6>
-                            <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
-                                <div class="form-group">
-                                    <label for="uname1">نام کاربری:</label>
-                                    <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
-                                    <div class="invalid-feedback">نام کاربری الزامی است.</div>
-                                </div>
-                                <div class="form-group">
-                                    <label>رمز عبور:</label>
-                                    <input type="password" class="form-control form-control-lg" id="pwd1" required="" autocomplete="new-password">
-                                    <div class="invalid-feedback">رمزعبور الزامی است!</div>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="rememberMe">
-                                  <label class="custom-control-label" for="rememberMe">یاد آوری کلمه عبور</label>
-                                </div>
-                                <div class="form-group py-4">
-                                    <button type="submit" class="btn btn-success btn-xl float-right" id="btnLogin">ورود به سیستم</button>
-                                </div>
-                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-body" style="padding-top: 0px !important;padding-bottom: 0px !important;">
+                        <div class="row ">
+                            <div class="col-md-7" style="border-left: 1px solid ;"></div>
+                            <div class="col-md-5 pt-4 pb-2" style="float: right;direction: rtl; text-align: right;">
+                                <h6>
+                                    ورود به سیستم
+                                </h6>
+                                <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                                    <div class="form-group">
+                                        <label for="uname1">نام کاربری:</label>
+                                        <input type="text" class="form-control form-control-lg" name="uname1" id="uname1" required="">
+                                        <div class="invalid-feedback">نام کاربری الزامی است.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>رمز عبور:</label>
+                                        <input type="password" class="form-control form-control-lg" id="pwd1" required="" autocomplete="new-password">
+                                        <div class="invalid-feedback">رمزعبور الزامی است!</div>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input" id="rememberMe">
+                                      <label class="custom-control-label" for="rememberMe">یاد آوری کلمه عبور</label>
+                                    </div>
+                                    <div class="form-group py-4">
+                                        <button type="submit" class="btn btn-success btn-xl float-right" id="btnLogin">ورود به سیستم</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
