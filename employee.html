@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Form</h1>
+        <form>
+          <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="name" class="float-right">اسم:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="last_name" class="float-right">تخلص:</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name"  required>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="father_name" class="float-right">اسم پدر:</label>
+                    <input type="text" class="form-control" id="father_name" name="father_name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="float-right">ایمیل:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="gender" class="float-right">جنسیت:</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                        <option value="">انتخاب جنسیت</option>
+                        <option value="male">مرد</option>
+                        <option value="female">زن</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="date_of_birth" class="float-right">تاریخ تولد:</label>
+                    <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" required>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="province" class="float-right">ولایت:</label>
+                    <select class="form-control" id="province" name="province" required>
+                        <option value="">انتخاب ولایت</option>
+                        <option value="1">کابل</option>
+                        <option value="2">هرات</option>
+                        <option value="other">غیره</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="facebook" class="float-right">فسبوک:</label>
+                    <input type="text" class="form-control" id="facebook" name="facebook" required>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="whatsapp_number" class="float-right">شماره واتس اپ:</label>
+                    <input type="text" class="form-control" id="whatsapp_number" name="whatsapp_number" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone_number" class="float-right">شماره تماس:</label>
+                    <input type="text" class="form-control" id="phone_number" name="phone_number" required>
+                </div>
+            </div>
+          </div>
+         
+          <button type="submit" class="btn btn-primary " class="float-right">ذخیره</button>
+        </form>
+      </div>
+</body>
+</html>
